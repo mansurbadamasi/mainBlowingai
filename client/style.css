@@ -244,14 +244,27 @@ form img {
 
 
 
-@media screen  and (max-width: 300px){
+@media screen  and (max-width: 400px){
+
+  .info_container{
+   
+    height: 400px;
+  }
   .developer_container{
+    justify-content: space-evenly;
     flex-direction: column;
   }
 
+  .image_container{
+    width: 100px;
+    height: 100px;
+  }
+
   .info{
-    width: 170px;
+    width: auto;
+    min-width: 250px;
     height: 10rem;
+    margin:0 20px;
   }
 
   #logo h1{
