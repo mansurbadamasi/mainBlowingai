@@ -77,7 +77,7 @@ const handleSubmit = async (e) => {
     loader(messageDiv);
 
     // fetch data from server
-    const response = await fetch('https://mindblowingai-r7jx.onrender.com', {
+    const response = await fetch('https://mindblowingai-r7jx.onrender.com/', {
         method: 'post',
         headers: {
             'content-type': 'application/json'
@@ -99,7 +99,6 @@ const handleSubmit = async (e) => {
         const err = await response.text();
 
         messageDiv.innerHTML = 'something went wrong, if continue to happen please fell free to contact mansur at 08136009118';
-        alert(err);
     }
 }
 
